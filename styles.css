@@ -1,0 +1,41 @@
+body {
+    background: #ced4da;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.top {
+    place-self: end;
+    position: sticky;
+    bottom: 165px;
+    margin-top: 100vh;
+    float: right;
+    margin-right: 15px;
+
+    /* visual styling */
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+}
+
+/* dark mode */
+
+.darkmode {
+    background-color: #292929;
+    color: white;
+}
+
+.darkmode .card {
+    background-color: #292929;
+    border-right-color: white;
+    border-left-color: white;
+    border-bottom-color: white;
+    border-top-color: white;
+}
