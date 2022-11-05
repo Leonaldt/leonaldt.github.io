@@ -16,6 +16,14 @@ body {
     font-weight: 600 !important;
 }
 
+.profile-image {
+    padding: 3px;
+    border: 3px solid #fff; 
+    border-radius: 50%; 
+    width: 152px; 
+    height: 152px;
+}
+
 nav {
     background: #0c0e1a !important;
 }
@@ -66,6 +74,38 @@ footer {
     color: #fff;
     background: #000;
     border-radius: 100px;
+}
+
+.some-projects {
+    line-height: 0.5;
+    text-align: center;
+}
+
+.some-projects span {
+    display: inline-block;
+    position: relative; 
+    font-weight: 500;
+    font-size: 20px; 
+}
+
+.some-projects span:before,
+.some-projects span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid white;
+    top: 0;
+    width: 564px;
+}
+
+.some-projects span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.some-projects span:after {
+    left: 100%;
+    margin-left: 15px;
 }
 
 .custom-tooltip {
@@ -147,9 +187,28 @@ footer {
 }
 
 /* responsive (first mobile) */
+@media screen and (max-width: 1399px) {
+    .some-projects span:before,
+    .some-projects span:after {
+        width: 475px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .some-projects span:before,
+    .some-projects span:after {
+        width: 385px;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .software-skills {
         margin-top: 18px !important;
+    }
+
+    .some-projects span:before,
+    .some-projects span:after {
+        width: 265px;
     }
 }
 
@@ -157,6 +216,11 @@ footer {
     .carousel-item img {
         height: 180px;
         width: 180px;
+    }
+
+    .some-projects span:before,
+    .some-projects span:after {
+        width: 175px;
     }
 }
 
@@ -178,10 +242,20 @@ footer {
     .carousel-control-next {
         align-items: flex-start !important;
     }
+
+    .some-projects span:before,
+    .some-projects span:after {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 427px) {
     .btn-tech-used {
         margin-top: 15px;
+    }
+
+    .some-projects span:before,
+    .some-projects span:after {
+        width: 60%;
     }
 }
