@@ -48,19 +48,6 @@ footer {
     margin-bottom: -20.5px !important;
 }
 
-.carousel-control-prev {
-    width: 94% !important;
-    align-items: end !important;
-    justify-content: end !important;
-
-}
-
-.carousel-control-next {
-    align-items: end !important;
-    justify-content: end !important;
-    width: auto !important;
-}
-
 .top {
     place-self: end;
     position: sticky;
